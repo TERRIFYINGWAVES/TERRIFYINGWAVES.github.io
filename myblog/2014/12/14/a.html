@@ -1,0 +1,42 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>db2服务启动出现1069错误</title>
+  <meta name="author" content="missmiss">
+  <meta name="description" content="missmiss">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body>
+  <header>
+      <div class="inner">
+        <h1>Terrifyingwaves.GitHub.io</h1>
+        <h2>人生初见只道寻常</h2>
+      </div>
+    </header>      
+  
+    
+
+    <div>
+
+        <h1 class="title">db2服务启动出现1069错误</h1>
+      
+        <p>早晨上班来，同事向我求助，原来他的db2服务启动出现1069错误。我记得前一天他因为忘记数据库密码让我帮忙把密码找回来或者修改一下，我选择帮他把密码给修改了，昨天还在用得好好的，结果今天就出现了悲催的问题。其实这个问题不难百度一大把解决方案，我们不能只解决问题，也要找到问题的根源。</p>
+        <p>首先我们要了解db2的安装过程。db2安装完成后有一些进程作为系统服务于行，为了能够运行这些服务需要一个操作系统用户。因此db2会以你安装时的db2账户名来创建操作系统用户，若此用户存在则不会创建。所以在安装时要以具有本地管理员权限的用户安装。创建的用户具有最高权限，在Windows系统中db2服务是以该用户的权限在执行。该用户所在组将作为db2实例最高权限管理组。在该组内的所有用户都具有相应的权限。当为db2实例创建的操作系统用户密码修改后，services.msc（微软服务控制中心，执行它就可以进入）中的相关db2服务的属性-登陆中的密码未能同步修改就会出现1069错误。</p>
+      
+    </div>
+
+
+<section id="comment">
+  <div class="ds-thread"></div>
+</section>
+
+
+
+
+
+</body>
+</html>
